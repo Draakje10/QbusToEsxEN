@@ -468,20 +468,20 @@ ESX.GetPlayerData()
 
 --------------------------------------------------------------------------------------------------
 
-İtem Oluşturma.
+Item Creation.
 ```lua
 QBCore.Functions.CreateUseableItem()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.RegisterUsableItem()
 ```
 
 --------------------------------------------------------------------------------------------------
 
-Banka Para Kaldırma.
+Bank Money Removal.
 ```lua
 Player.Functions.RemoveMoney()
 ```
@@ -494,7 +494,7 @@ xPlayer.removeMoney(money)
 
 --------------------------------------------------------------------------------------------------
 
-Dosya'lar İle Alakalı.
+Related to Files.
 ```lua
 QBCore.Functions.CreateCallback()
 ```
@@ -507,7 +507,7 @@ ESX.RegisterServerCallback()
 
 --------------------------------------------------------------------------------------------------
 
-Dosya'lar İle Alakalı.
+Related to Files.
 ```lua
 QBCore.Functions.TriggerCallback()
 ```
@@ -520,7 +520,7 @@ ESX.TriggerServerCallback()
 
 --------------------------------------------------------------------------------------------------
 
-qb'de cid esx'de identifier kullanılıyor olayı çözmeniz için ufak bir kod bloğu bıraktım.
+in qb cid in esx identifier is used, I left a small code block for you to figure it out.
 ```lua
 QBCore.Functions.CreateCallback('system:fetchStatus', function(source, cb)
     local Player = QBCore.Functions.GetPlayer(source)
@@ -586,7 +586,7 @@ ESX.GetItems()
 ```
 --------------------------------------------------------------------------------------------------
 
-Sql bağlama kısmı
+Sql binding part
 ```lua
 QBCore.Functions.ExecuteSql()
 ```
@@ -601,7 +601,7 @@ MySQL.Async.execute()
 --------------------------------------------------------------------------------------------------
 
 
-RegisterCommand - yani chat komut kısmı.
+RegisterCommand - i.e. the chat command part.
 ```lua
 QBCore.Commands.Add()
 ```
@@ -611,21 +611,21 @@ QBCore.Commands.Add()
 ```lua
 RegisterCommand 
 ```
--- (RegisterCommand qbcore'da da çalışır.)
+-- (RegisterCommand also works in qbcore)
 
 --------------------------------------------------------------------------------------------------
 
-Karakter Kısmı Dır Data Sına Bağlama.
+Binding to Character Part Dır Data.
 ```lua
 local Player = QBCore.Functions.GetPlayer(source)
-['@citizenid'] = Player.PlayerData.citizenid -- çekme Player
+['@citizenid'] = Player.PlayerData.citizenid -- pull Player
 ```
 # QBUSCORE ON TOP
 
 # BOTTOM ESX
 ```lua
 local user = ESX.GetPlayerFromId(src)
-["@identifier"] = user.identifier -- çekme user
+["@identifier"] = user.identifier -- pull user
 ```
 
 --------------------------------------------------------------------------------------------------
@@ -634,9 +634,9 @@ local user = ESX.GetPlayerFromId(src)
 QBCore.Shared.Trim()
 QBCore.Shared.GroupDigits()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.Math.Trim()
 ESX.Math.GroupDigits()
@@ -647,9 +647,9 @@ ESX.Math.GroupDigits()
 ```lua
 QBCore.Functions.GetClosestObject()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.Game.GetClosestObject()
 ```
@@ -659,9 +659,9 @@ ESX.Game.GetClosestObject()
 ```lua
 QBCore.Functions.GetVehicleInDirection()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.Game.GetVehicleInDirection()
 ```
@@ -671,9 +671,9 @@ ESX.Game.GetVehicleInDirection()
 ```lua
 QBCore.Functions.GetPeds()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.Game.GetPeds()
 ```
@@ -683,9 +683,9 @@ ESX.Game.GetPeds()
 ```lua
 QBCore.Functions.GetObjects()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.Game.GetObjects()
 ```
@@ -695,9 +695,9 @@ ESX.Game.GetObjects()
 ```lua
 QBCore.Functions.GetClosestPed()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.Game.GetClosestPed()
 ```
@@ -707,9 +707,9 @@ ESX.Game.GetClosestPed()
 ```lua
 QBCore.Functions.SpawnObject()
 ```
-# ÜSTEKİ QBUSCORE
+# QBUSCORE ON TOP
 
-# ALTAKİ ESX
+# BOTTOM ESX
 ```lua
 ESX.Game.SpawnObject()
 ```
