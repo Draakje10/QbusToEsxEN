@@ -414,7 +414,7 @@ end
 --------------------------------------------------------------------------------------------------
 
 `qb-core/client/functions.lua`
-bunu qb-core de client functions.lua. atın bir boş satıra
+put it in qb-core in client functions.lua. on a blank line
 ```lua
 function QBCore.Functions.DeleteObject(object)
 	SetEntityAsMissionEntity(object, false, true)
@@ -434,7 +434,7 @@ end
 --------------------------------------------------------------------------------------------------
 
 `qb-core/server/functions.lua`
-bunu qb-core de server functions.lua. atın bir boş satıra
+put it in qb-core in server functions.lua. on a blank line
 ```lua
 function QBCore.Functions.GetItemLabel(item)
 	if QBCore.UseableItems[item] ~= nil then
@@ -454,8 +454,7 @@ end
 ```
 
 --------------------------------------------------------------------------------------------------
-
-Oyuncu Kendi Karakterin.
+The Player is Your Own Character.
 ```lua
 QBCore.Functions.GetPlayerData()
 ```
